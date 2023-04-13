@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000;
+    background-size: cover;
+   
+}
+
+nav a {
+
+width: 200px;
+color: white;
+background-color: black;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+body main {
+    z-index: -1;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+
+
