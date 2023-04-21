@@ -2,32 +2,34 @@
 
 body  {background:#c4bfb9;background-size: cover;justify-content: center;align-items: center;}
 
-section#sun { position: relative;top:0;left:0;right:0;bottom:0;margin:auto;width:1000px;height:1000px;border-radius:75%;background:white;opacity:0.9;box-shadow: 0px 0px 1500px 150px white;}
+section#sun { position: absolute;top:0;left:0;right:0;bottom:0;margin:auto;width:1000px;height:1000px;border-radius:75%;background:white;opacity:0.9;box-shadow: 0px 0px 1500px 150px white;}
 
 .section#powerlineCrow { position: relative }
 
   body {
     background: radial-gradient(ellipse at bottom, #707070 0%, #707070 100%);
-    min-height: 100vh;
+    min-height: 75vh;
     /* If you want to change the site height you can remove overflow-y */
     /* pureSnow will automatically detect height of body tag */
     color: white;
   }
   
-  .snowflake { position: absolute;width: 10px;height: 10px;background: linear-gradient(white, white);
+  .snowflake { position:relative;width:10px;height:10px;background:linear-gradient(white, white);z-index: 3;
   /* Workaround for Chromium's selective color inversion */border-radius: 50%;filter: drop-shadow(0 0 10px white);}
 
+
+.outer-wrapperForest    {display:hidden; position: relative;}
 .wrapper                {display: flex;flex-direction: row;width: 423vw;scroll-behavior: smooth;position: relative;}
 
-section#parallax        { position: relative;width: 100%;height: 100vh;overflow: hidden;display: flex;z-index: 100000;}
+section#parallax        { position: relative;width: 100%;height: 100vh;overflow: hidden;display: flex;z-index: -1;}
 section#parallax:before { content: '';position: absolute;bottom: 0;height: 100%;}
-section#parallax:after  { content: '';position: absolute;bottom: 0;left:0;height: 100%;z-index: 10000;}
+section#parallax:after  { content: '';position: absolute;bottom: 0;left:0;height: 100%;z-index: 1;}
 section#parallax img    { position: absolute;top: 0;left: 0;height: 100%;pointer-events: none;}
 
-.wrapperForest               { display: flex;flex-direction:row;width: 423vw;scroll-behavior: smooth;position: relative;}
+.wrapperForest          { overflow-x:hidden; width: 415vw;scroll-behavior: smooth;position: relative;}
 
-section#forest          { background-color: #0e0b0b; position: absolute;width: 100%;height:100vh;overflow: hidden; display: flex;z-index:2;}
-section#forest:before   { content: '';position: absolute;bottom:0;height: 100%;}
+section#forest          { overflow-x:hidden;background-color: #0e0b0b; position:relative;width:100%;height:100%; display: flex;z-index:-1;}
+section#forest:before   { content: '';position: absolute;bottom:0;}
 section#forest:after    { content: '';position: absolute;bottom:0;left:0;height: 100%;z-index: 1;}
 section#forest img      { position: absolute;top: 0;left: 0;height: 100%;pointer-events: none;}
 
