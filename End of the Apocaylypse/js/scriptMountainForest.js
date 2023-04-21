@@ -1,4 +1,5 @@
 let bg = document.getElementById("gradient");
+
 let achterkant = document.getElementById("achterkant");
 let middelkant = document.getElementById("middelkant");
 let middelkant2 = document.getElementById("middelkant2");
@@ -6,9 +7,7 @@ let voorkant = document.getElementById("voorkant");
 let bladerdak = document.getElementById("bladerdak");
 let trees2 = document.getElementById("trees2");
 let treeCrow = document.getElementById("treeCrow");
-let achterkantForest = document.getElementById("achterkantForest");
-let middelkantForest = document.getElementById("middelkantForest");
-let voorkantForest = document.getElementById("voorkantForest");
+
 
 
 
@@ -22,11 +21,6 @@ window.addEventListener('scroll', function(){
     bladerdak.style.left = value * 0.2 + 'px';
     trees2.style.left = value * 0.1 + 'px';
     treeCrow.style.left = value * 0.1 + 'px';
-    achterkantForest.style.left = -value * 0.15 + 'px';
-    middelkantForest.style.left = -value * 0.20 + 'px';
-    voorkantForest.style.left = value * 0.2 + 'px';
-
-
 })
 
 

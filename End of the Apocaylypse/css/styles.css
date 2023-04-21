@@ -1,41 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    user-select: none;
-    box-sizing: border-box;
-}
+*     {margin: 0;padding: 0;list-style: none;user-select: none;box-sizing: border-box;}
 
-body{
-    background:#c4bfb9 ;
-    background-size: cover;  
-    justify-content: center;
-  align-items: center;
-   
-}
+body  {background:#c4bfb9;background-size: cover;justify-content: center;align-items: center;}
 
+section#sun { position: relative;top:0;left:0;right:0;bottom:0;margin:auto;width:1000px;height:1000px;border-radius:75%;background:white;opacity:0.9;box-shadow: 0px 0px 1500px 150px white;}
 
-
-section#sun { 
-    position: relative;
-      top:0;
-      left:0;
-      right:0;
-      bottom:0;
-      margin: auto;  
-      width:1000px;
-      height:1000px;
-      border-radius:75%;	
-      background:white;
-      opacity:0.9;			
-      box-shadow: 0px 0px 1500px 150px white;  
-     
-  }
-
-
-.section#powerlineCrow {
-    position: relative;
-}
+.section#powerlineCrow { position: relative }
 
   body {
     background: radial-gradient(ellipse at bottom, #707070 0%, #707070 100%);
@@ -45,118 +14,22 @@ section#sun {
     color: white;
   }
   
-  .snowflake {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: linear-gradient(white, white);
-    /* Workaround for Chromium's selective color inversion */
-    border-radius: 50%;
-    filter: drop-shadow(0 0 10px white);
-  }
+  .snowflake { position: absolute;width: 10px;height: 10px;background: linear-gradient(white, white);
+  /* Workaround for Chromium's selective color inversion */border-radius: 50%;filter: drop-shadow(0 0 10px white);}
+
+.wrapper                {display: flex;flex-direction: row;width: 423vw;scroll-behavior: smooth;position: relative;}
+
+section#parallax        { position: relative;width: 100%;height: 100vh;overflow: hidden;display: flex;z-index: 100000;}
+section#parallax:before { content: '';position: absolute;bottom: 0;height: 100%;}
+section#parallax:after  { content: '';position: absolute;bottom: 0;left:0;height: 100%;z-index: 10000;}
+section#parallax img    { position: absolute;top: 0;left: 0;height: 100%;pointer-events: none;}
+
+.wrapperForest               { display: flex;flex-direction:row;width: 423vw;scroll-behavior: smooth;position: relative;}
+
+section#forest          { background-color: #0e0b0b; position: absolute;width: 100%;height:100vh;overflow: hidden; display: flex;z-index:2;}
+section#forest:before   { content: '';position: absolute;bottom:0;height: 100%;}
+section#forest:after    { content: '';position: absolute;bottom:0;left:0;height: 100%;z-index: 1;}
+section#forest img      { position: absolute;top: 0;left: 0;height: 100%;pointer-events: none;}
 
 
-  .wrapper {
-    display: flex;
-    flex-direction: row;
-    width: 423vw;
-    scroll-behavior: smooth;
-  
-  }
 
-
-  section#parallax {
-    position: relative;
-    
-    width: 100%;
-    height: 100vh;
-    overflow: hidden; 
-    display: flex;
-    z-index: 100000;
-}
-
-section#parallax :before {
-content: '';
-position: absolute;
-bottom: 0;
-height: 100%;
-}
-
-section#parallax:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left:0;
-    height: 100%;
-    z-index: 10000;
-    
-    
-    }
-
-section#parallax img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    pointer-events: none;
-}
-
-#red {
-    z-index: 2;
-}
-
-#green {
-    z-index: 2;
-}
-
-.wrapper2 {
-  display: flex;
-  flex-direction: row;
-  width: 200vw;
-  scroll-behavior: smooth;
-
-}
-
-
-section#parallaxtrees {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden; 
-  display: flex;
-  z-index: 100000;
-}
-
-section#parallaxtrees:before {
-content: '';
-position: absolute;
-bottom: 0;
-height: 100%;
-}
-
-section#parallaxtrees:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left:0;
-  height: 100%;
-  z-index: 10000;
-  
-  
-  }
-
-section#parallaxtrees img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  pointer-events: none;
-}
-
-#red {
-  z-index: 2;
-}
-
-#green {
-  z-index: 2;
-}
