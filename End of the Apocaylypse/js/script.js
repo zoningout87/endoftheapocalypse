@@ -1,3 +1,36 @@
+let bg = document.getElementById("gradient");
+let achterkant = document.getElementById("achterkant");
+let middelkant = document.getElementById("middelkant");
+let middelkant2 = document.getElementById("middelkant2");
+let voorkant = document.getElementById("voorkant");
+let bladerdak = document.getElementById("bladerdak");
+let trees2 = document.getElementById("trees2");
+let treeCrow = document.getElementById("treeCrow");
+let achterkantForest = document.getElementById("achterkantForest");
+let middelkantForest = document.getElementById("middelkantForest");
+let voorkantForest = document.getElementById("voorkantForest");
+
+
+
+window.addEventListener('scroll', function(){
+    var value = this.window.scrollX;
+    bg.style.left = value * 0.50 + 'px';
+    achterkant.style.left = value * 0.20 + 'px';
+    middelkant.style.left = -value * 0.15 + 'px';
+    middelkant2.style.left = -value * 0.10 + 'px';
+    voorkant.style.left = value * 0.2 + 'px';
+    bladerdak.style.left = value * 0.2 + 'px';
+    trees2.style.left = value * 0.1 + 'px';
+    treeCrow.style.left = value * 0.1 + 'px';
+    achterkantForest.style.left = -value * 0.15 + 'px';
+    middelkantForest.style.left = -value * 0.20 + 'px';
+    voorkantForest.style.left = value * 0.2 + 'px';
+
+
+})
+
+
+
 
 let snowflakesCount = 200; // Snowflake count, can be overwritten by attrs
 let baseCss = ``;
@@ -130,32 +163,4 @@ else {
 
 
 
-let bg = document.getElementById("achtergrondMountains");
-let blue = document.getElementById("middelMountains");
-let red = document.getElementById("powerlineCross");
-let green = document.getElementById("voorkantMountains");
-let purple = document.getElementById("trees2");
-let pink = document.getElementById("treeCrow");
-let yellow = document.getElementById("achterkantForest");
-let orange = document.getElementById("middelForest");
-let violet = document.getElementById("voorkantForest");
-let white = document.getElementById("bladerdakForest");
 
-
-
-window.addEventListener('scroll', function(){
-    var value = this.window.scrollX;
-    bg.style.left = value * 0.5 + 'px';
-    yellow.style.left = value * 0.2 + 'px';
-    blue.style.left = -value * 0.15 + 'px';
-    orange.style.left = -value * 0.15 + 'px';
-    red.style.left = -value * 0.15 + 'px';
-    green.style.left = value * 0.15 + 'px';
-    violet.style.left = value * 0.15 + 'px';
-    purple.style.left = value * 0.15 + 'px';
-    pink.style.left = value * 0.15 + 'px';
-    white.style.left = value * 0.15 + 'px';
-    
-
-
-})
