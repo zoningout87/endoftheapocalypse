@@ -1,0 +1,21 @@
+*     {margin: 0;padding: 0;list-style: none;user-select: none;box-sizing: border-box;}
+
+  body {
+    background: radial-gradient(ellipse at bottom, #707070 500%, #707070 100%);color: white;
+  }
+  
+  .snowflake { position:absolute;width:10px;height:10px;background:linear-gradient(white, white);z-index:1;
+  /* Workaround for Chromium's selective color inversion */border-radius: 50%;filter: drop-shadow(0 0 10px white);}
+
+
+.outer-wrapperForest    {display:hidden; position: relative;}
+
+.wrapperForest          { overflow-x:hidden; width: 415vw;scroll-behavior: smooth;position: relative;}
+
+section#forest          { overflow-x:hidden;background-color: #0e0b0b; position:relative;width:100%;height:100%; display: flex;z-index:-1;}
+section#forest:before   { content: '';position: absolute;bottom:0;}
+section#forest:after    { content: '';position: absolute;bottom:0;left:0;height: 100%;z-index: 1;}
+section#forest img      { position: absolute;top: 0;left: 0;height: 100%;pointer-events: none;}
+
+
+
