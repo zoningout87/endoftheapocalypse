@@ -33,5 +33,5 @@ section#forest:before   { content: '';position: absolute;bottom:0;}
 section#forest:after    { content: '';position: absolute;bottom:0;left:0;height: 100%;z-index: 1;}
 section#forest img      { position: absolute;top: 0;left: 0;height: 100%;pointer-events: none;}
 
-
+nav {position: fixed; color:white; font-size: 30px; }
 

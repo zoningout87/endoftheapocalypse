@@ -1,5 +1,5 @@
 *     {margin: 0;padding: 0;list-style: none;user-select: none;box-sizing: border-box;}
-
+nav {position: fixed; color:white; font-size: 30px; }
   body {
     background: radial-gradient(ellipse at bottom, #707070 500%, #707070 100%);color: white; width: 100%;}
   
