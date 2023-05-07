@@ -5,7 +5,7 @@ body  {background:#c4bfb9;background-size: cover;justify-content: center;align-i
 section#sun { position: absolute;top:0;left:0;right:0;bottom:0;margin:auto;width:1000px;height:1000px;border-radius:75%;background:white;opacity:0.9;box-shadow: 0px 0px 1500px 150px white;}
 
 .section#powerlineCrow { position: relative }
-
+a {z-index: 10;}
   body {
     background: radial-gradient(ellipse at bottom, #707070 0%, #707070 100%);
     min-height: 75vh;
